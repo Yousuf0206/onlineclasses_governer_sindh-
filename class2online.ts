@@ -16,7 +16,7 @@ const answer =  await inquirer.prompt([{
     name : "operator",
     type : "list",
     message : "Select any operator to perform command",
-    choices : ["addition" , "subtraction", "multiplication" , "division"], 
+    choices : ["addition" , "subtraction", "multiplication" , "division", "percentage"], 
 }])
 
 
@@ -30,6 +30,8 @@ else if (answer.operator ===  "multiplication"){
 console.log (answer.num1*answer.num2)}
 
 else if (answer.operator ===  "division"){
-console.log (answer.num1/answer.num2)
-}
+console.log (answer.num1/answer.num2)}
 
+else if (answer.operator ===  "percentage"){
+console.log (answer.num1%answer.num2)
+}
