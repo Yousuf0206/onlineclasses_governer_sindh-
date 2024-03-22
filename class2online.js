@@ -29,5 +29,5 @@ else if (answer.operator === "division") {
     console.log(answer.num1 / answer.num2);
 }
 else if (answer.operator === "percentage") {
-    console.log(answer.num1 % answer.num2);
+    console.log(answer.num1 / (answer.num2) * 100);
 }
